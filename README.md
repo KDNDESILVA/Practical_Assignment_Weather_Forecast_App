@@ -17,4 +17,4 @@ Weather Forecast is a simple Android application that displays current weather i
    ```java
    private static final String WEATHER_API_KEY = "YOUR_API_KEY";
 
-~ by E2145070 ~
+~ by KDNDESILVA - E2145070 ~
