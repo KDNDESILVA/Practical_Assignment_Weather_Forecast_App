@@ -17,4 +17,10 @@ Weather Forecast is a simple Android application that displays current weather i
    ```java
    private static final String WEATHER_API_KEY = "YOUR_API_KEY";
 
+##Update
+
+-Now can search the weather by typing the city name.
+-last searched city weather details will remain when you using the app again.
+
+
 ~ by KDNDESILVA - E2145070 ~
