@@ -16,6 +16,9 @@ Weather Forecast is a simple Android application that displays current weather i
 3. Add your OpenWeatherMap API key in `MainActivity.java`:
    ```java
    private static final String WEATHER_API_KEY = "YOUR_API_KEY";
+4. Add your OpenWeatherMap API key in `CityActivity.java`:
+   ```java
+   private static final String WEATHER_API_KEY = "YOUR_API_KEY";
 
 ## Update
 
