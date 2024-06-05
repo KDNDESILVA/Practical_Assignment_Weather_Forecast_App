@@ -19,8 +19,8 @@ Weather Forecast is a simple Android application that displays current weather i
 
 ## Update
 
--Now can search the weather by typing the city name.
--last searched city weather details will remain when you using the app again.
+- Now can search the weather by typing the city name.
+- Last searched city weather details will remain when you using the app again.
 
 
 ~ by KDNDESILVA - E2145070 ~
