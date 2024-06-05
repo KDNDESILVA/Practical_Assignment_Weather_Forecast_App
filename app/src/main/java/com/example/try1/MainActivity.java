@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView latLngTextView, addressTextView, timeTextView, descriptionTextView,
             tempratureTextView, humidityTextView ;
     private ImageView weatherIcon;
-    private Button cityearchButton;
+    private Button citySearchButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,14 +55,14 @@ public class MainActivity extends AppCompatActivity {
         tempratureTextView = findViewById(R.id.textView_temp);
         humidityTextView = findViewById(R.id.textView_humidity);
         weatherIcon = findViewById(R.id.imageView_weather_icon);
-        cityearchButton = findViewById(R.id.citySearch);
+        citySearchButton = findViewById(R.id.citySearch);
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
         fetchLocation();
         updateCurrentTime();
 
-        cityearchButton.setOnClickListener(new View.OnClickListener() {
+        citySearchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CityActivity.class);
