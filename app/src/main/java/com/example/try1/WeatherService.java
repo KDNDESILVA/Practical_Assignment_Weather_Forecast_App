@@ -12,4 +12,9 @@ public interface WeatherService {
             @Query("appid") String apiKey,
             @Query("units") String units
     );
+
+    @GET("weather")
+    Call<WeatherResponse> getCurrentWeatherByCity(@Query("q") String cityName,
+                                                  @Query("appid") String apiKey,
+                                                  @Query("units") String units);
 }

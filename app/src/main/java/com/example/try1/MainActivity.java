@@ -3,11 +3,14 @@ package com.example.try1;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView latLngTextView, addressTextView, timeTextView, descriptionTextView,
             tempratureTextView, humidityTextView ;
     private ImageView weatherIcon;
+    private Button cityearchButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +55,21 @@ public class MainActivity extends AppCompatActivity {
         tempratureTextView = findViewById(R.id.textView_temp);
         humidityTextView = findViewById(R.id.textView_humidity);
         weatherIcon = findViewById(R.id.imageView_weather_icon);
+        cityearchButton = findViewById(R.id.citySearch);
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
         fetchLocation();
         updateCurrentTime();
+
+        cityearchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CityActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void fetchLocation() {

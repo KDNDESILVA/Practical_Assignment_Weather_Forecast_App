@@ -15,8 +15,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="-4dp"
-        android:layout_marginBottom="337dp"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        android:layout_marginBottom="337dp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -34,11 +33,10 @@
         android:layout_height="72dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginEnd="217dp"
         android:layout_marginBottom="438dp"
         android:fontFamily="serif"
-        android:text="Tempretuer"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="45dp" />
@@ -51,7 +49,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="328dp"
-        android:text="Time"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20dp" />
@@ -80,11 +77,12 @@
         android:id="@+id/textView_description"
         android:layout_width="wrap_content"
         android:layout_height="51dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
         android:layout_marginEnd="204dp"
         android:layout_marginBottom="304dp"
-        android:text="Description"
         android:textColor="@color/white"
         android:textSize="25dp" />
 
@@ -96,7 +94,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="252dp"
         android:layout_marginBottom="386dp"
-        android:text="Humidity"
         android:textColor="@color/white"
         android:textSize="30dp" />
 
@@ -106,9 +103,29 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="57dp"
-        android:layout_marginBottom="158dp"
-        android:text="Location"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="223dp"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="355dp"
+        android:layout_marginBottom="146dp"
+        app:srcCompat="@mipmap/ic_address_foreground" />
+
+    <TextView
+        android:id="@+id/textView_address"
+        android:layout_width="331dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="127dp"
         android:textColor="@color/white"
         android:textSize="20dp" />
 
@@ -118,38 +135,18 @@
         android:layout_height="37dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="356dp"
-        android:layout_marginBottom="153dp"
+        android:layout_marginEnd="354dp"
+        android:layout_marginBottom="218dp"
         app:srcCompat="@mipmap/ic_location_foreground" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="44dp"
-        android:layout_height="37dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="357dp"
-        android:layout_marginBottom="81dp"
-        app:srcCompat="@mipmap/ic_address_foreground" />
-
-    <TextView
-        android:id="@+id/textView_address"
-        android:layout_width="331dp"
-        android:layout_height="51dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="62dp"
-        android:text="Address"
-        android:textColor="@color/white"
-        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/textViewHeader"
         android:layout_width="338dp"
         android:layout_height="144dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="616dp"
         android:fontFamily="serif"
@@ -157,6 +154,18 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="45dp" />
+
+    <Button
+        android:id="@+id/citySearch"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="44dp"
+        android:text="Search by City" />
 
 </RelativeLayout>
 
